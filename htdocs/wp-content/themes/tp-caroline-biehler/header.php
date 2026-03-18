@@ -11,15 +11,19 @@
     
     <?php wp_body_open(); ?>
 
-<header>
+<header class="site-header">
+
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/banner.jpg" alt="">
+
+</header>
+
     <nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Menu Principal', 'tp-caroline-biehler' ); ?>">
         <?php
         wp_nav_menu( array(
             'theme_location' => 'primary',
-            'container'      => false,
+            'container'      => true,
             'menu_class'     => 'menu',
             'fallback_cb'    => false,
         ) );
         ?>
     </nav>
-</header>

@@ -8,6 +8,7 @@ if (have_posts()):
         <article>
             <header>
                 <h2><?php the_title(); ?></h2>
+                <?php the_post_thumbnail('thumbnail'); ?>
                 <aside>
                     écrit par <?php the_author(); ?>
                     le <?php the_date(); ?>
