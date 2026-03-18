@@ -6,18 +6,18 @@ get_header();
 <section class="flex">
 
 <?php 
-    if(have_posts()): // si l'url appelé correspond à du contenu  (article, page, auteur, catégorie...)
-        while(have_posts()): // pour chaque élément trouvé... 
-            the_post(); // on charge les données du contenu
+    if(have_posts()): 
+        while(have_posts()): 
+            the_post(); 
     ?>
         <article class="montheme-article-full"> 
             <header>
-                <h1><?php the_title(); // affichage du titre ?></h1>
+                <h1><?php the_title(); ?></h1>
             </header>
             
             <?php the_post_thumbnail('thumbnail'); ?>
             <div>
-                <?php the_content(); // contenu du post ?> 
+                <?php the_content();  ?> 
             </div>
             
         </article>
@@ -37,7 +37,7 @@ get_header();
 </aside>
 
 
-</main>
+
 
 <?php 
 get_footer();
