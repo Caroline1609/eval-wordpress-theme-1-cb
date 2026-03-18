@@ -2,7 +2,18 @@
 Theme Name: tp-caroline-biehler
 */
 
-article{
-    border: solid 2px red;
+:root {
+    
+    --soft-cyan: #90f1efff;
+    --petal-frost: #ffd6e0ff;
+    --light-gold: #ffef9fff;
+    --light-green: #c1fba4ff;
+    --light-green-2: #7bf1a8ff;
+
+}
+
+
+article {
+    border: solid 2px rgb(6, 47, 230);
     margin: 5px;
 }
